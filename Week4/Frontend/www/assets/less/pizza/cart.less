@@ -1,0 +1,125 @@
+#cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 5px 1px gray;
+    z-index: 999;
+    background: @bg_checkout;
+
+    #title {
+        padding: 36px 10px;
+
+        h4 {
+            margin: 0;
+            display: inline-block;
+            font-weight: bold;
+
+            .count {
+                background: @orange_color_dark;
+                margin-left: 6px;
+                border-radius: 10px;
+                padding: 1px 6px;
+                font-size: 14px;
+                color: white;
+            }
+        }
+
+        .clear {
+            font-size: 10px;
+            color: gray;
+            padding-left: 24px;
+            outline: none;
+        }
+    }
+
+    #order-body {
+        background: @bg_items;
+        height: 100%;
+
+        .order_container {
+            height: 126px;
+            border-bottom: 1px solid lightgray;
+
+            .item {
+                padding: 10px 0 10px 20px;
+
+                .name {
+                    font-size: 22px;
+                    position: relative;
+                    color: @orange_color_dark;
+
+                    .item-picture {
+                        position: absolute;
+                        top: 0;
+                        left: 230px;
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                .i_size {
+                    margin-top: 10px;
+                }
+
+                .btns {
+                    margin-top: 10px;
+
+                    .btn {
+                        border-radius: 16px;
+                        padding: 3px 6px;
+                        margin: 0 6px;
+                        outline: none;
+                    }
+
+                    .remove {
+                        background: #eeeced;
+                        color: @orange_color;
+                        border: 1px solid lightgray;
+                    }
+                }
+            }
+        }
+    }
+
+    #cart_checkout {
+        border-top: 1px solid lightgray;
+        width: 300px;
+        background: @bg_checkout;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+
+        #price_val {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #total_price {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 80px;
+        }
+
+        #checkout_order {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+
+        .btn {
+            background: @orange_color;
+            width: 90%;
+            border-radius: 6px;
+            margin-top: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-color: darken(@orange_color, 5%);
+            outline: none;
+        }
+    }
+}

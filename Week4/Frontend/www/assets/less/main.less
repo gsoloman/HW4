@@ -1,0 +1,229 @@
+@bg_color: #fefef4;
+@bg_checkout: white;
+@bg_items: #f5f5f5;
+@orange_color: #eca032;
+@orange_color_dark: #ea862e;
+
+#wrap {
+    background: @bg_color;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#header {
+    text-align: center;
+    margin-right: 300px;
+
+    h2 {
+        display: inline-block;
+        font-weight: bold;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    
+    #header {
+        text-align: center;
+        margin-right: 300px;
+    
+        h2 {
+            display: inline-block;
+            font-weight: bold;
+        }
+    
+        #header-count {
+            background: @orange_color_dark;
+            padding: 5px 10px;
+            border-radiu.container {
+                margin-top: 100px;
+            }
+            
+            #header {
+                text-align: center;
+                margin-right: 300px;
+            
+                h2 {
+                    display: inline-block;
+                    font-weight: bold;
+                }
+            
+                #header-count {
+                    background: @orange_color_dark;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+            
+            #filters {
+                display: inline-block;
+                margin-bottom: 20px;
+                width: 100%;
+                padding-right: 320px;
+            
+                .nav-pills a {
+                    color: @orange_color_dark;
+                  }
+                  
+                  .nav-pills .active a{
+                    background-color: @orange_color_dark;
+                    color: white;
+                  }
+            }
+            
+            #pizza-list {
+                margin-right: 300px;
+            }
+
+            color: white;
+            font-weight: bold;
+        }
+    }
+    
+    #filters {
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+        padding-right: 320px;
+    
+        .nav-pills a {
+            color: @orange_color_dark;
+          }
+          
+          .nav-pills .active a{
+            background-color: @orange_color_dark;
+            color: white;
+          }
+    }
+    
+    #pizza-list {
+        margin-right: 300px;
+    }
+    
+    #header-count {
+        background: @orange_color_dark;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+#filters {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-right: 320px;
+
+    .nav-pills a {
+        color: @orange_color_dark;
+      }
+      
+      .nav-pills .active a{
+        background-color: @orange_color_dark;
+        color: white;
+      }
+}
+
+#pizza-list {
+    margin-right: 300px;
+}
+
+@navbarText: lightgray;
+@navbarBorder: gray;
+
+.navbar {
+    margin-right: 300px;
+    padding: 10px 20px;
+
+    #navb {
+        padding-left: 110px;
+        color: @navbarText;
+
+        .l_1 {
+            width: 100%;
+            border-bottom: 1px solid @navbarBorder;
+            padding-bottom: 10px;
+
+            span {
+                margin-right: 30px;
+            }
+
+            .btn {
+                float: right;
+            }
+        }
+
+        .l_2 {
+            padding-top: 10px;
+        }
+    }
+}
+
+.label_top {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 1100;
+
+    img {
+        transform: rotate(180deg);
+    }
+
+    .label-text {
+        background-color: @orange_color_dark;
+        color: white;
+        width: auto;
+    }
+
+    .l_1 {
+        font-size: 20px;
+        padding: 15px 20px 5px;
+    }
+
+    .l_2 {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: -8px;
+        padding-bottom: 15px;
+    }
+}
+
+.label_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+
+    .label-text {
+        background-color: @orange_color_dark;
+        color: white;
+        margin-top: -6px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .l_1 {
+        font-size: 16px;
+        padding-top: 15px;
+        margin-bottom: 40px;
+        height: 22px;
+    }
+
+    .l_2 {
+        font-size: 14px;
+        padding: 25px 0 10px 0;
+    }
+}
+
+#foot {
+    padding: 10px 0;
+    padding-right: 300px;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
+@import "pizza/cart";
+@import "pizza/pizza-card";
